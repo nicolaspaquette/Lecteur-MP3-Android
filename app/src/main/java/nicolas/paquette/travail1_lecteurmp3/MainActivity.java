@@ -1,8 +1,5 @@
 package nicolas.paquette.travail1_lecteurmp3;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,10 +11,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.Hashtable;
-import java.util.Vector;
 
 public class MainActivity extends AppCompatActivity {
     Button buttonArtistes, buttonChansons;
