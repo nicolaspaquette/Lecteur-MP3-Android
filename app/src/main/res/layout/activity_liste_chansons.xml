@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ListeChansons">
+
+    <TextView
+        android:id="@+id/nomListeChansons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:text="Toutes les chansons"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/design_default_color_primary">
+
+        <CheckBox
+            android:id="@+id/lectureAleatoire"
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="108dp"
+            android:gravity="center"
+            android:text="Lecture Aléatoire"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listeDesChansons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" />
+</LinearLayout>
